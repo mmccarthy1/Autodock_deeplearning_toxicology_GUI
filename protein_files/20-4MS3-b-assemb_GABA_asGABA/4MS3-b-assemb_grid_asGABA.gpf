@@ -1,0 +1,25 @@
+npts 26 32 32                        # num.grid points in xyz
+gridfld 4MS3_GABAB_asGABA.maps.fld # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C H HD N NA OA SA   # receptor atom types
+ligand_types A Br C Cl F H HD I Mg N NA OA S SA # ligand atom types
+receptor 4MS3_GABAB_asGABA.pdbqt # macromolecule
+gridcenter -23.984 16.197 -29.586    # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map 4MS3_GABAB_asGABA.A.map # atom-specific affinity map
+map 4MS3_GABAB_asGABA.Br.map # atom-specific affinity map
+map 4MS3_GABAB_asGABA.C.map # atom-specific affinity map
+map 4MS3_GABAB_asGABA.Cl.map # atom-specific affinity map
+map 4MS3_GABAB_asGABA.F.map # atom-specific affinity map
+map 4MS3_GABAB_asGABA.H.map # atom-specific affinity map
+map 4MS3_GABAB_asGABA.HD.map # atom-specific affinity map
+map 4MS3_GABAB_asGABA.I.map # atom-specific affinity map
+map 4MS3_GABAB_asGABA.Mg.map # atom-specific affinity map
+map 4MS3_GABAB_asGABA.N.map # atom-specific affinity map
+map 4MS3_GABAB_asGABA.NA.map # atom-specific affinity map
+map 4MS3_GABAB_asGABA.OA.map # atom-specific affinity map
+map 4MS3_GABAB_asGABA.S.map # atom-specific affinity map
+map 4MS3_GABAB_asGABA.SA.map # atom-specific affinity map
+elecmap 4MS3_GABAB_asGABA.e.map # electrostatic potential map
+dsolvmap 4MS3_GABAB_asGABA.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant

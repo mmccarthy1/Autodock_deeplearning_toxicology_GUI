@@ -1,0 +1,25 @@
+npts 44 54 44                       # num.grid points in xyz
+gridfld 4IAQ_sero_as2GM.maps.fld      # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C H HD N NA OA SA   # receptor atom types
+ligand_types A Br C Cl F H HD I Mg N NA OA S SA # ligand atom types
+receptor 4IAQ_sero_as2GM.pdbqt        # macromolecule
+gridcenter -21.082 8.584 21.437    # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map 4IAQ_sero_as2GM.A.map             # atom-specific affinity map
+map 4IAQ_sero_as2GM.Br.map            # atom-specific affinity map
+map 4IAQ_sero_as2GM.C.map             # atom-specific affinity map
+map 4IAQ_sero_as2GM.Cl.map            # atom-specific affinity map
+map 4IAQ_sero_as2GM.F.map             # atom-specific affinity map
+map 4IAQ_sero_as2GM.H.map             # atom-specific affinity map
+map 4IAQ_sero_as2GM.HD.map            # atom-specific affinity map
+map 4IAQ_sero_as2GM.I.map             # atom-specific affinity map
+map 4IAQ_sero_as2GM.Mg.map            # atom-specific affinity map
+map 4IAQ_sero_as2GM.N.map             # atom-specific affinity map
+map 4IAQ_sero_as2GM.NA.map            # atom-specific affinity map
+map 4IAQ_sero_as2GM.OA.map            # atom-specific affinity map
+map 4IAQ_sero_as2GM.S.map             # atom-specific affinity map
+map 4IAQ_sero_as2GM.SA.map            # atom-specific affinity map
+elecmap 4IAQ_sero_as2GM.e.map         # electrostatic potential map
+dsolvmap 4IAQ_sero_as2GM.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant

@@ -1,0 +1,25 @@
+npts 58 50 50                        # num.grid points in xyz
+gridfld 5V54_sero_as89F.maps.fld      # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C H HD N NA OA SA   # receptor atom types
+ligand_types A Br C Cl F H HD P Zn N NA OA S SA # ligand atom types
+receptor 5V54_sero_as89F.pdbqt        # macromolecule
+gridcenter -6.088 -1.591 22.457      # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map 5V54_sero_as89F.A.map             # atom-specific affinity map
+map 5V54_sero_as89F.Br.map            # atom-specific affinity map
+map 5V54_sero_as89F.C.map             # atom-specific affinity map
+map 5V54_sero_as89F.Cl.map            # atom-specific affinity map
+map 5V54_sero_as89F.F.map             # atom-specific affinity map
+map 5V54_sero_as89F.H.map             # atom-specific affinity map
+map 5V54_sero_as89F.HD.map            # atom-specific affinity map
+map 5V54_sero_as89F.P.map             # atom-specific affinity map
+map 5V54_sero_as89F.Zn.map            # atom-specific affinity map
+map 5V54_sero_as89F.N.map             # atom-specific affinity map
+map 5V54_sero_as89F.NA.map            # atom-specific affinity map
+map 5V54_sero_as89F.OA.map            # atom-specific affinity map
+map 5V54_sero_as89F.S.map             # atom-specific affinity map
+map 5V54_sero_as89F.SA.map            # atom-specific affinity map
+elecmap 5V54_sero_as89F.e.map         # electrostatic potential map
+dsolvmap 5V54_sero_as89F.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant

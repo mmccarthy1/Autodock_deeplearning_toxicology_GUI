@@ -1,0 +1,58 @@
+# AVS field file
+#
+# AutoDock Atomic Affinity and Electrostatic Grids
+#
+# Created by autogrid4.
+#
+#SPACING 0.375
+#NELEMENTS 58 46 62
+#CENTER 25.638 10.245 -27.555
+#MACROMOLECULE 5fjv_A2nAChR_pct1.pdbqt
+#GRID_PARAMETER_FILE 5fjv_dock-prep_pckt1.gpf
+#
+ndim=3			# number of dimensions in the field
+dim1=59			# number of x-elements
+dim2=47			# number of y-elements
+dim3=63			# number of z-elements
+nspace=3		# number of physical coordinates per point
+veclen=16		# number of affinity values at each point
+data=float		# data type (byte, integer, float, double)
+field=uniform		# field type (uniform, rectilinear, irregular)
+coord 1 file=5fjv_A2nAChR_pct1.maps.xyz filetype=ascii offset=0
+coord 2 file=5fjv_A2nAChR_pct1.maps.xyz filetype=ascii offset=2
+coord 3 file=5fjv_A2nAChR_pct1.maps.xyz filetype=ascii offset=4
+label=A-affinity	# component label for variable 1
+label=Br-affinity	# component label for variable 2
+label=C-affinity	# component label for variable 3
+label=Cl-affinity	# component label for variable 4
+label=F-affinity	# component label for variable 5
+label=H-affinity	# component label for variable 6
+label=HD-affinity	# component label for variable 7
+label=I-affinity	# component label for variable 8
+label=Mg-affinity	# component label for variable 9
+label=N-affinity	# component label for variable 10
+label=NA-affinity	# component label for variable 11
+label=OA-affinity	# component label for variable 12
+label=S-affinity	# component label for variable 13
+label=SA-affinity	# component label for variable 14
+label=Electrostatics	# component label for variable 14
+label=Desolvation	# component label for variable 15
+#
+# location of affinity grid files and how to read them
+#
+variable 1 file=5fjv_A2nAChR_pct1.A.map filetype=ascii skip=6
+variable 2 file=5fjv_A2nAChR_pct1.Br.map filetype=ascii skip=6
+variable 3 file=5fjv_A2nAChR_pct1.C.map filetype=ascii skip=6
+variable 4 file=5fjv_A2nAChR_pct1.Cl.map filetype=ascii skip=6
+variable 5 file=5fjv_A2nAChR_pct1.F.map filetype=ascii skip=6
+variable 6 file=5fjv_A2nAChR_pct1.H.map filetype=ascii skip=6
+variable 7 file=5fjv_A2nAChR_pct1.HD.map filetype=ascii skip=6
+variable 8 file=5fjv_A2nAChR_pct1.I.map filetype=ascii skip=6
+variable 9 file=5fjv_A2nAChR_pct1.Mg.map filetype=ascii skip=6
+variable 10 file=5fjv_A2nAChR_pct1.N.map filetype=ascii skip=6
+variable 11 file=5fjv_A2nAChR_pct1.NA.map filetype=ascii skip=6
+variable 12 file=5fjv_A2nAChR_pct1.OA.map filetype=ascii skip=6
+variable 13 file=5fjv_A2nAChR_pct1.S.map filetype=ascii skip=6
+variable 14 file=5fjv_A2nAChR_pct1.SA.map filetype=ascii skip=6
+variable 15 file=5fjv_A2nAChR_pct1.e.map filetype=ascii skip=6
+variable 16 file=5fjv_A2nAChR_pct1.d.map filetype=ascii skip=6

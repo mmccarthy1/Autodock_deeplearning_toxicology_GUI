@@ -1,0 +1,25 @@
+npts 56 48 54                        # num.grid points in xyz
+gridfld 5wiv_DRD4_asAQD.maps.fld      # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C H HD N NA OA SA   # receptor atom types
+ligand_types A Br C Cl F H HD P Zn N NA OA S SA # ligand atom types
+receptor 5wiv_DRD4_asAQD.pdbqt        # macromolecule
+gridcenter -17.707 14.53 -15.584     # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map 5wiv_DRD4_asAQD.A.map             # atom-specific affinity map
+map 5wiv_DRD4_asAQD.Br.map            # atom-specific affinity map
+map 5wiv_DRD4_asAQD.C.map             # atom-specific affinity map
+map 5wiv_DRD4_asAQD.Cl.map            # atom-specific affinity map
+map 5wiv_DRD4_asAQD.F.map             # atom-specific affinity map
+map 5wiv_DRD4_asAQD.H.map             # atom-specific affinity map
+map 5wiv_DRD4_asAQD.HD.map            # atom-specific affinity map
+map 5wiv_DRD4_asAQD.P.map             # atom-specific affinity map
+map 5wiv_DRD4_asAQD.Zn.map            # atom-specific affinity map
+map 5wiv_DRD4_asAQD.N.map             # atom-specific affinity map
+map 5wiv_DRD4_asAQD.NA.map            # atom-specific affinity map
+map 5wiv_DRD4_asAQD.OA.map            # atom-specific affinity map
+map 5wiv_DRD4_asAQD.S.map             # atom-specific affinity map
+map 5wiv_DRD4_asAQD.SA.map            # atom-specific affinity map
+elecmap 5wiv_DRD4_asAQD.e.map         # electrostatic potential map
+dsolvmap 5wiv_DRD4_asAQD.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant

@@ -1,0 +1,25 @@
+npts 33 30 35                        # num.grid points in xyz
+gridfld 5kxi_A4B2nAChR_asNIC.maps.fld   # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C HD N NA OA SA     # receptor atom types
+ligand_types A Br HD H C Cl OA SA S P Zn NA N F # ligand atom types
+receptor 5kxi_A4B2nAChR_asNIC.pdbqt     # macromolecule
+gridcenter 67 -28.8 -39.7            # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map 5kxi_A4B2nAChR_asNIC.A.map          # atom-specific affinity map
+map 5kxi_A4B2nAChR_asNIC.Br.map          # atom-specific affinity map
+map 5kxi_A4B2nAChR_asNIC.HD.map         # atom-specific affinity map
+map 5kxi_A4B2nAChR_asNIC.H.map          # atom-specific affinity map
+map 5kxi_A4B2nAChR_asNIC.C.map          # atom-specific affinity map
+map 5kxi_A4B2nAChR_asNIC.Cl.map         # atom-specific affinity map
+map 5kxi_A4B2nAChR_asNIC.OA.map         # atom-specific affinity map
+map 5kxi_A4B2nAChR_asNIC.SA.map         # atom-specific affinity map
+map 5kxi_A4B2nAChR_asNIC.S.map          # atom-specific affinity map
+map 5kxi_A4B2nAChR_asNIC.P.map          # atom-specific affinity map
+map 5kxi_A4B2nAChR_asNIC.Zn.map         # atom-specific affinity map
+map 5kxi_A4B2nAChR_asNIC.NA.map         # atom-specific affinity map
+map 5kxi_A4B2nAChR_asNIC.N.map          # atom-specific affinity map
+map 5kxi_A4B2nAChR_asNIC.F.map          # atom-specific affinity map
+elecmap 5kxi_A4B2nAChR_asNIC.e.map      # electrostatic potential map
+dsolvmap 5kxi_A4B2nAChR_asNIC.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant

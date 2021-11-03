@@ -1,0 +1,24 @@
+npts 54 46 60                        # num.grid points in xyz
+gridfld 5SVQ_P2X3_asTNP.maps.fld # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C HD N NA OA SA     # receptor atom types
+ligand_types A Br Cl C HD H P Mg NA N OA SA S # ligand atom types
+receptor 5SVQ_P2X3_asTNP.pdbqt # macromolecule
+gridcenter 15.35 -10.92 -38.59       # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map 5SVQ_P2X3_asTNP.A.map      # atom-specific affinity map
+map 5SVQ_P2X3_asTNP.Br.map     # atom-specific affinity map
+map 5SVQ_P2X3_asTNP.Cl.map     # atom-specific affinity map
+map 5SVQ_P2X3_asTNP.C.map      # atom-specific affinity map
+map 5SVQ_P2X3_asTNP.HD.map     # atom-specific affinity map
+map 5SVQ_P2X3_asTNP.H.map      # atom-specific affinity map
+map 5SVQ_P2X3_asTNP.P.map      # atom-specific affinity map
+map 5SVQ_P2X3_asTNP.Mg.map     # atom-specific affinity map
+map 5SVQ_P2X3_asTNP.NA.map     # atom-specific affinity map
+map 5SVQ_P2X3_asTNP.N.map      # atom-specific affinity map
+map 5SVQ_P2X3_asTNP.OA.map     # atom-specific affinity map
+map 5SVQ_P2X3_asTNP.SA.map     # atom-specific affinity map
+map 5SVQ_P2X3_asTNP.S.map      # atom-specific affinity map
+elecmap 5SVQ_P2X3_asTNP.e.map  # electrostatic potential map
+dsolvmap 5SVQ_P2X3_asTNP.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant

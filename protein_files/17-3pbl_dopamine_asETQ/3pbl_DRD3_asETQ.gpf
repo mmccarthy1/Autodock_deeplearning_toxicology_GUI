@@ -1,0 +1,23 @@
+npts 44 54 46                        # num.grid points in xyz
+gridfld 3pbl_DRD3_asETQ.maps.fld      # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C HD N NA OA SA     # receptor atom types
+ligand_types A Br C Cl H HD P N NA OA S SA # ligand atom types
+receptor 3pbl_DRD3_asETQ.pdbqt        # macromolecule
+gridcenter -0.149 -13.938 9.836      # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map 3pbl_DRD3_asETQ.A.map             # atom-specific affinity map
+map 3pbl_DRD3_asETQ.Br.map            # atom-specific affinity map
+map 3pbl_DRD3_asETQ.C.map             # atom-specific affinity map
+map 3pbl_DRD3_asETQ.Cl.map            # atom-specific affinity map
+map 3pbl_DRD3_asETQ.H.map             # atom-specific affinity map
+map 3pbl_DRD3_asETQ.HD.map            # atom-specific affinity map
+map 3pbl_DRD3_asETQ.P.map             # atom-specific affinity map
+map 3pbl_DRD3_asETQ.N.map            # atom-specific affinity map
+map 3pbl_DRD3_asETQ.NA.map            # atom-specific affinity map
+map 3pbl_DRD3_asETQ.OA.map            # atom-specific affinity map
+map 3pbl_DRD3_asETQ.S.map             # atom-specific affinity map
+map 3pbl_DRD3_asETQ.SA.map            # atom-specific affinity map
+elecmap 3pbl_DRD3_asETQ.e.map         # electrostatic potential map
+dsolvmap 3pbl_DRD3_asETQ.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant

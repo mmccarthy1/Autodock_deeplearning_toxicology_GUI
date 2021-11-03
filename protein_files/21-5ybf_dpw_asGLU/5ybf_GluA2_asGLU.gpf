@@ -1,0 +1,25 @@
+npts 30 32 40                        # num.grid points in xyz
+gridfld 5ybf_GluA2_asGLU.maps.fld      # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C HD N NA OA SA     # receptor atom types
+ligand_types A Br C Cl F H HD P Zn N NA OA S SA # ligand atom types
+receptor 5ybf_GluA2_asGLU.pdbqt        # macromolecule
+gridcenter 47.72 -14.66 18.99        # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map 5ybf_GluA2_asGLU.A.map             # atom-specific affinity map
+map 5ybf_GluA2_asGLU.Br.map            # atom-specific affinity map
+map 5ybf_GluA2_asGLU.C.map             # atom-specific affinity map
+map 5ybf_GluA2_asGLU.Cl.map            # atom-specific affinity map
+map 5ybf_GluA2_asGLU.F.map             # atom-specific affinity map
+map 5ybf_GluA2_asGLU.H.map             # atom-specific affinity map
+map 5ybf_GluA2_asGLU.HD.map            # atom-specific affinity map
+map 5ybf_GluA2_asGLU.P.map             # atom-specific affinity map
+map 5ybf_GluA2_asGLU.Zn.map            # atom-specific affinity map
+map 5ybf_GluA2_asGLU.N.map             # atom-specific affinity map
+map 5ybf_GluA2_asGLU.NA.map            # atom-specific affinity map
+map 5ybf_GluA2_asGLU.OA.map            # atom-specific affinity map
+map 5ybf_GluA2_asGLU.S.map             # atom-specific affinity map
+map 5ybf_GluA2_asGLU.SA.map            # atom-specific affinity map
+elecmap 5ybf_GluA2_asGLU.e.map         # electrostatic potential map
+dsolvmap 5ybf_GluA2_asGLU.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant

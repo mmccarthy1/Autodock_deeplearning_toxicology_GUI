@@ -1,0 +1,58 @@
+# AVS field file
+#
+# AutoDock Atomic Affinity and Electrostatic Grids
+#
+# Created by autogrid4.
+#
+#SPACING 0.375
+#NELEMENTS 90 66 52
+#CENTER 11.690 -1.542 66.045
+#MACROMOLECULE 2fy4_CHAT_asCOA.pdbqt
+#GRID_PARAMETER_FILE 2fy4_dock-grid_pckt1_asCOA.gpf
+#
+ndim=3			# number of dimensions in the field
+dim1=91			# number of x-elements
+dim2=67			# number of y-elements
+dim3=53			# number of z-elements
+nspace=3		# number of physical coordinates per point
+veclen=16		# number of affinity values at each point
+data=float		# data type (byte, integer, float, double)
+field=uniform		# field type (uniform, rectilinear, irregular)
+coord 1 file=2fy4_CHAT_asCOA.maps.xyz filetype=ascii offset=0
+coord 2 file=2fy4_CHAT_asCOA.maps.xyz filetype=ascii offset=2
+coord 3 file=2fy4_CHAT_asCOA.maps.xyz filetype=ascii offset=4
+label=A-affinity	# component label for variable 1
+label=Br-affinity	# component label for variable 2
+label=C-affinity	# component label for variable 3
+label=Cl-affinity	# component label for variable 4
+label=F-affinity	# component label for variable 5
+label=H-affinity	# component label for variable 6
+label=HD-affinity	# component label for variable 7
+label=I-affinity	# component label for variable 8
+label=Mg-affinity	# component label for variable 9
+label=N-affinity	# component label for variable 10
+label=NA-affinity	# component label for variable 11
+label=OA-affinity	# component label for variable 12
+label=S-affinity	# component label for variable 13
+label=SA-affinity	# component label for variable 14
+label=Electrostatics	# component label for variable 14
+label=Desolvation	# component label for variable 15
+#
+# location of affinity grid files and how to read them
+#
+variable 1 file=2fy4_CHAT_asCOA.A.map filetype=ascii skip=6
+variable 2 file=2fy4_CHAT_asCOA.Br.map filetype=ascii skip=6
+variable 3 file=2fy4_CHAT_asCOA.C.map filetype=ascii skip=6
+variable 4 file=2fy4_CHAT_asCOA.Cl.map filetype=ascii skip=6
+variable 5 file=2fy4_CHAT_asCOA.F.map filetype=ascii skip=6
+variable 6 file=2fy4_CHAT_asCOA.H.map filetype=ascii skip=6
+variable 7 file=2fy4_CHAT_asCOA.HD.map filetype=ascii skip=6
+variable 8 file=2fy4_CHAT_asCOA.I.map filetype=ascii skip=6
+variable 9 file=2fy4_CHAT_asCOA.Mg.map filetype=ascii skip=6
+variable 10 file=2fy4_CHAT_asCOA.N.map filetype=ascii skip=6
+variable 11 file=2fy4_CHAT_asCOA.NA.map filetype=ascii skip=6
+variable 12 file=2fy4_CHAT_asCOA.OA.map filetype=ascii skip=6
+variable 13 file=2fy4_CHAT_asCOA.S.map filetype=ascii skip=6
+variable 14 file=2fy4_CHAT_asCOA.SA.map filetype=ascii skip=6
+variable 15 file=2fy4_CHAT_asCOA.e.map filetype=ascii skip=6
+variable 16 file=2fy4_CHAT_asCOA.d.map filetype=ascii skip=6

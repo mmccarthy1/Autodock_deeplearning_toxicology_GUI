@@ -1,0 +1,25 @@
+npts 30 52 40                        # num.grid points in xyz
+gridfld 2wjw_GluR2_ATD_asNAG.maps.fld      # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C H HD N NA OA SA   # receptor atom types
+ligand_types A Br C Cl F H HD P Zn N NA OA S SA # ligand atom types
+receptor 2wjw_GluR2_ATD_asNAG.pdbqt        # macromolecule
+gridcenter -39.13 -36.295 -21.586    # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map 2wjw_GluR2_ATD_asNAG.A.map             # atom-specific affinity map
+map 2wjw_GluR2_ATD_asNAG.Br.map            # atom-specific affinity map
+map 2wjw_GluR2_ATD_asNAG.C.map             # atom-specific affinity map
+map 2wjw_GluR2_ATD_asNAG.Cl.map            # atom-specific affinity map
+map 2wjw_GluR2_ATD_asNAG.F.map             # atom-specific affinity map
+map 2wjw_GluR2_ATD_asNAG.H.map             # atom-specific affinity map
+map 2wjw_GluR2_ATD_asNAG.HD.map            # atom-specific affinity map
+map 2wjw_GluR2_ATD_asNAG.P.map             # atom-specific affinity map
+map 2wjw_GluR2_ATD_asNAG.Zn.map            # atom-specific affinity map
+map 2wjw_GluR2_ATD_asNAG.N.map             # atom-specific affinity map
+map 2wjw_GluR2_ATD_asNAG.NA.map            # atom-specific affinity map
+map 2wjw_GluR2_ATD_asNAG.OA.map            # atom-specific affinity map
+map 2wjw_GluR2_ATD_asNAG.S.map             # atom-specific affinity map
+map 2wjw_GluR2_ATD_asNAG.SA.map            # atom-specific affinity map
+elecmap 2wjw_GluR2_ATD_asNAG.e.map         # electrostatic potential map
+dsolvmap 2wjw_GluR2_ATD_asNAG.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant

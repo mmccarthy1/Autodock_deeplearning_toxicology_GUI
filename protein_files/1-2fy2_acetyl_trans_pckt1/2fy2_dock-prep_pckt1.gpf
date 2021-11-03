@@ -1,0 +1,26 @@
+npts 56 40 40                        # num.grid points in xyz
+gridfld 2fy2_CHAT_pckt1.maps.fld      # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C HD N NA OA SA     # receptor atom types
+ligand_types A Br C Cl F H HD P Zn N NA OA S SA   # ligand atom types
+receptor 2fy2_CHAT_pckt1.pdbqt        # macromolecule
+gridcenter 4.69 2.38 64.93           # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map 2fy2_CHAT_pckt1.A.map             # atom-specific affinity map
+map 2fy2_CHAT_pckt1.Br.map             # atom-specific affinity map
+map 2fy2_CHAT_pckt1.C.map             # atom-specific affinity map
+map 2fy2_CHAT_pckt1.Cl.map             # atom-specific affinity map
+map 2fy2_CHAT_pckt1.F.map             # atom-specific affinity map
+map 2fy2_CHAT_pckt1.H.map             # atom-specific affinity map
+map 2fy2_CHAT_pckt1.HD.map            # atom-specific affinity map
+map 2fy2_CHAT_pckt1.P.map             # atom-specific affinity map
+map 2fy2_CHAT_pckt1.Zn.map             # atom-specific affinity map
+map 2fy2_CHAT_pckt1.N.map             # atom-specific affinity map
+map 2fy2_CHAT_pckt1.NA.map            # atom-specific affinity map
+map 2fy2_CHAT_pckt1.OA.map            # atom-specific affinity map
+map 2fy2_CHAT_pckt1.S.map             # atom-specific affinity map
+map 2fy2_CHAT_pckt1.SA.map            # atom-specific affinity map
+elecmap 2fy2_CHAT_pckt1.e.map         # electrostatic potential map
+dsolvmap 2fy2_CHAT_pckt1.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant
+

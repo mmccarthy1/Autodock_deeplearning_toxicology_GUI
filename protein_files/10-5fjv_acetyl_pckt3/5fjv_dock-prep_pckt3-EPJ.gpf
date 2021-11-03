@@ -1,0 +1,25 @@
+npts 40 52 50                        # num.grid points in xyz
+gridfld 5fjv_A2nAChR_asEPJ.maps.fld      # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C H HD N NA OA SA   # receptor atom types
+ligand_types A Br C Cl F H HD P Zn N NA OA S SA # ligand atom types
+receptor 5fjv_A2nAChR_asEPJ.pdbqt        # macromolecule
+gridcenter -14.946 1.9 -4.325        # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map 5fjv_A2nAChR_asEPJ.A.map             # atom-specific affinity map
+map 5fjv_A2nAChR_asEPJ.Br.map            # atom-specific affinity map
+map 5fjv_A2nAChR_asEPJ.C.map             # atom-specific affinity map
+map 5fjv_A2nAChR_asEPJ.Cl.map            # atom-specific affinity map
+map 5fjv_A2nAChR_asEPJ.F.map             # atom-specific affinity map
+map 5fjv_A2nAChR_asEPJ.H.map             # atom-specific affinity map
+map 5fjv_A2nAChR_asEPJ.HD.map            # atom-specific affinity map
+map 5fjv_A2nAChR_asEPJ.P.map             # atom-specific affinity map
+map 5fjv_A2nAChR_asEPJ.Zn.map            # atom-specific affinity map
+map 5fjv_A2nAChR_asEPJ.N.map             # atom-specific affinity map
+map 5fjv_A2nAChR_asEPJ.NA.map            # atom-specific affinity map
+map 5fjv_A2nAChR_asEPJ.OA.map            # atom-specific affinity map
+map 5fjv_A2nAChR_asEPJ.S.map             # atom-specific affinity map
+map 5fjv_A2nAChR_asEPJ.SA.map            # atom-specific affinity map
+elecmap 5fjv_A2nAChR_asEPJ.e.map         # electrostatic potential map
+dsolvmap 5fjv_A2nAChR_asEPJ.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant

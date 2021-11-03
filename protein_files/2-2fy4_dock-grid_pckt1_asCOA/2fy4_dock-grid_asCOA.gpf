@@ -1,0 +1,25 @@
+npts 90 66 52                        # num.grid points in xyz
+gridfld 2fy4_CHAT_asCOA.maps.fld      # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C H HD N NA OA SA   # receptor atom types
+ligand_types A Br C Cl F H HD I Mg N NA OA S SA # ligand atom types
+receptor 2fy4_CHAT_asCOA.pdbqt        # macromolecule
+gridcenter 11.69 -1.542 66.045       # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map 2fy4_CHAT_asCOA.A.map             # atom-specific affinity map
+map 2fy4_CHAT_asCOA.Br.map            # atom-specific affinity map
+map 2fy4_CHAT_asCOA.C.map             # atom-specific affinity map
+map 2fy4_CHAT_asCOA.Cl.map            # atom-specific affinity map
+map 2fy4_CHAT_asCOA.F.map             # atom-specific affinity map
+map 2fy4_CHAT_asCOA.H.map             # atom-specific affinity map
+map 2fy4_CHAT_asCOA.HD.map            # atom-specific affinity map
+map 2fy4_CHAT_asCOA.I.map             # atom-specific affinity map
+map 2fy4_CHAT_asCOA.Mg.map            # atom-specific affinity map
+map 2fy4_CHAT_asCOA.N.map             # atom-specific affinity map
+map 2fy4_CHAT_asCOA.NA.map            # atom-specific affinity map
+map 2fy4_CHAT_asCOA.OA.map            # atom-specific affinity map
+map 2fy4_CHAT_asCOA.S.map             # atom-specific affinity map
+map 2fy4_CHAT_asCOA.SA.map            # atom-specific affinity map
+elecmap 2fy4_CHAT_asCOA.e.map         # electrostatic potential map
+dsolvmap 2fy4_CHAT_asCOA.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant
