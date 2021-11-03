@@ -1,0 +1,20 @@
+name: deepdocktox
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - numpy=1.20.1
+  - openbabel=3.1.1
+  - plotly=4.9.0
+  - python-kaleido=0.2.1
+  - rdkit=2020.09.3
+  - pyqt=5.12.3
+  - pyqtwebengine=5.12.1
+  - pandas=1.2.4
+  - pip=21.1.1
+  - pip:
+      - mpi4py==3.0.3
+      - tensorflow==2.4.0
+      - keras==2.4.3
+      - pubchempy==1.0.4
+      - pylatex==1.4.1
