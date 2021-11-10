@@ -2558,7 +2558,7 @@ class MainWindow(QMainWindow):
                 self.prog_check.prog_status.connect(self.update_status)
                 self.message_prog.message_status.connect(self.update_message)
                 worker_process2.signals.finished.connect(self.thread_complete)
-                time.sleep(2)
+                #time.sleep(2)
                 worker_process2.signals.finished.connect(prot_mol_key)
                 self.threadpooldocksum.clear()
                 self.message_prog.quit()
