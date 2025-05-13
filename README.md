@@ -33,6 +33,24 @@
 
 ---
 
+## Environment Setup
+
+1. Use the `docking_gui.yml` file to set up Python and install required packages:
+   ```bash
+   conda env create --file docking_gui.yml
+   ```
+2. Activate the environment:
+   ```bash
+   conda activate deepdocktox
+   ```
+3. Run the program:
+   ```bash
+   python Autodock_deeplearning_toxicology_GUI.py
+   ```
+   - Ensure to use `--file` and not `-f` during installation to avoid issues with pip packages.
+
+---
+
 ## Quick Start Instructions
 
 1. Launch the program with:
@@ -118,20 +136,3 @@
 
 ---
 
-## Environment Setup
-
-1. Use the `docking_gui.yml` file to set up Python and install required packages:
-   ```bash
-   conda env create --file docking_gui.yml
-   ```
-2. Activate the environment:
-   ```bash
-   conda activate deepdocktox
-   ```
-3. Run the program:
-   ```bash
-   python Autodock_deeplearning_toxicology_GUI.py
-   ```
-   - Ensure to use `--file` and not `-f` during installation to avoid issues with pip packages.
-
----
