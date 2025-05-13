@@ -44,7 +44,9 @@
    conda activate deepdocktox
    ```
 3. The models are availabe in the release. This git hub has one tag, click on that on the right to get the models
-4. Run the program:
+   https://github.com/mmccarthy1/Autodock_deeplearning_toxicology_GUI/releases/tag/v1.0
+  
+5. Run the program:
    ```bash
    python Autodock_deeplearning_toxicology_GUI.py
    ```
