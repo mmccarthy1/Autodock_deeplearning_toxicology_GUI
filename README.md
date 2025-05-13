@@ -1,37 +1,3 @@
-The following python packages are required for full functionality.  Most python packages came from the conda-forge channel. Mpi4py was installed with pip from conda. Use the “docking_gui.yml” file to create a new python environment and install all python packages.  This will ensu
-re a separate environment so there are no changes to you base or other python environments. 
-Prerequisites (Non-python installs) 
-Python v3.8
-Conda v4.9.2
-AutoDock 4.2.6
-MGLTools1.5.6(Linux and Windows only)
-MPI v3 or v4 (either openMPI, intel openmpi or Microsoft SDK version)
-LaTex (Latex live works fine)
-Python Packages Needed
-binana.py (download from Durrant lab and University of Pittsburgh)
-Tensorflow v2.4
-Pandas v1.2.3
-Numpy v1.19
-Keras v2.4.3
-Mpi4py  v3.0.3
-Openbabel v3.1.1*
-Plotly  v4.9.3**
-Kaleido 
-Matplotlib
-Pylatex
-*tested and verified version
-**Newer plotly has also been tested and worked 
-Environment requirements
-Python
-	Use the “docking_gui.yml”  file to setup python and install python package.
-	Run with: 
-       	conda env create --file docking_gui.yml
-	then type: 
-       	conda activate deepdocktox
-	next: 
-       	python Autodock_deeplearning_toxicology_GUI_Beta.py
-           Then the program should start.
-           NOTE: “dash dash file” or “--file” needs to be used and not “-f” or “dash f” because it will not install pip packages correctly. It should work but it does not. 
 Windows
 	You must have Autodock 4.2.6 installed and a copy of the autodock4.exe file in the same directory as the program.  You must also have python.exe from mgltools_win32_1.5.6 and the mgltools directory in the directory the program is launched from.  Also mpiexec.exe is requir
 ed to be in the same directory the program is launched from.  Finally laytex needs to be installed and must work from anaconda prompt. NOTE: starting package was built for Linux. Autodock and mgltools for windows will have to be obtained from their respective websites
@@ -73,3 +39,37 @@ ontinue with step 5 above.
 Troubleshooting
 The GUI will check for the version of openMPI and work with version 3 or 4 however if multiple instances of one docking run are launch this usually indicates two installs of openMPI.  Both Conda and PIP will install openMPI with MPI4PY.  If you have recently installed MPI4PY this
  way and are facing this problem, we have had success with uninstalling MPI4PY and then running pip to reinstall while using the --no-deps command line argument.  This will install MPI4PY only, without installing openMPI.
+The following python packages are required for full functionality.  Most python packages came from the conda-forge channel. Mpi4py was installed with pip from conda. Use the “docking_gui.yml” file to create a new python environment and install all python packages. This will ensure a separate environment so there are no changes to you base or other python environments. 
+
+Prerequisites (Non-python installs) 
+Python v3.8
+Conda v4.9.2
+AutoDock 4.2.6
+MGLTools1.5.6(Linux and Windows only) This must be downloaded separately
+MPI v3 or v4 (either openMPI, intel openmpi or Microsoft SDK version)
+LaTex (Latex live works fine)
+Python Packages Needed
+binana.py (download from Durrant lab and University of Pittsburgh)
+Tensorflow v2.4
+Pandas v1.2.3
+Numpy v1.19
+Keras v2.4.3
+Mpi4py  v3.0.3
+Openbabel v3.1.1*
+Plotly  v4.9.3**
+Kaleido 
+Matplotlib
+Pylatex
+*tested and verified version
+**Newer plotly has also been tested and worked 
+Environment requirements
+Python
+	Use the “docking_gui.yml”  file to setup python and install python package.
+	Run with: 
+       	conda env create --file docking_gui.yml
+	then type: 
+       	conda activate deepdocktox
+	next: 
+       	python Autodock_deeplearning_toxicology_GUI_Beta.py
+           Then the program should start.
+           NOTE: “dash dash file” or “--file” needs to be used and not “-f” or “dash f” because it will not install pip packages correctly. It should work but it does not. 
