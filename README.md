@@ -37,7 +37,7 @@
 
 1. Launch the program with:
    ```bash
-   python Autodock_deeplearning_toxicology_GUI_Beta.py
+   python Autodock_deeplearning_toxicology_GUI.py
    ```
 2. Navigate to the **File** menu and select **1. Add Docking Project**. Enter a project name.
 3. Populate the table:
