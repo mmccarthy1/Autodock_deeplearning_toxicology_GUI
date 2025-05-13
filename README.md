@@ -114,8 +114,6 @@
 ## Prerequisites
 
 ### Non-Python Installs
-- **Python**: v3.8
-- **Conda**: v4.9.2
 - **AutoDock**: 4.2.6 **NOTE**: this must be downloaded separately
 - **MGLTools**: 1.5.6 (Linux and Windows only) **NOTE**: this must be downloaded separately
 - **MPI**: v3 or v4 (OpenMPI, Intel OpenMPI, or Microsoft SDK version)
@@ -124,6 +122,8 @@
 - **NVIDIA-Driver**: 570.124.04
 
 ### Python Packages
+- **Python**: v3.8
+- **Conda**: v4.9.2
 - **binana.py** (from Durrant lab and University of Pittsburgh)
 - **TensorFlow**: v2.5.0
 - **Pandas**: v1.2.3
