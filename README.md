@@ -1,0 +1,75 @@
+The following python packages are required for full functionality.  Most python packages came from the conda-forge channel. Mpi4py was installed with pip from conda. Use the “docking_gui.yml” file to create a new python environment and install all python packages.  This will ensu
+re a separate environment so there are no changes to you base or other python environments. 
+Prerequisites (Non-python installs) 
+Python v3.8
+Conda v4.9.2
+AutoDock 4.2.6
+MGLTools1.5.6(Linux and Windows only)
+MPI v3 or v4 (either openMPI, intel openmpi or Microsoft SDK version)
+LaTex (Latex live works fine)
+Python Packages Needed
+binana.py (download from Durrant lab and University of Pittsburgh)
+Tensorflow v2.4
+Pandas v1.2.3
+Numpy v1.19
+Keras v2.4.3
+Mpi4py  v3.0.3
+Openbabel v3.1.1*
+Plotly  v4.9.3**
+Kaleido 
+Matplotlib
+Pylatex
+*tested and verified version
+**Newer plotly has also been tested and worked 
+Environment requirements
+Python
+	Use the “docking_gui.yml”  file to setup python and install python package.
+	Run with: 
+       	conda env create --file docking_gui.yml
+	then type: 
+       	conda activate deepdocktox
+	next: 
+       	python Autodock_deeplearning_toxicology_GUI_Beta.py
+           Then the program should start.
+           NOTE: “dash dash file” or “--file” needs to be used and not “-f” or “dash f” because it will not install pip packages correctly. It should work but it does not. 
+Windows
+	You must have Autodock 4.2.6 installed and a copy of the autodock4.exe file in the same directory as the program.  You must also have python.exe from mgltools_win32_1.5.6 and the mgltools directory in the directory the program is launched from.  Also mpiexec.exe is requir
+ed to be in the same directory the program is launched from.  Finally laytex needs to be installed and must work from anaconda prompt. NOTE: starting package was built for Linux. Autodock and mgltools for windows will have to be obtained from their respective websites
+Linux
+	Autodock4 needs to be installed and “autodock4” should work from the command line. Also, the “mgltools_x86_64Linux2_1.5.6” directory needs to be in the same directory the program is a launched from. Finally laytex needs to be installed and must work from the prompt and th
+e same with mpirun (Although this may be installed with mpi4py). NOTE: Autodock was installed on Ubuntu with “sudo apt install autodock”
+MACOS
+	Autodock4 needs to be installed and “autodock4” should work from the command line. Finally laytex needs to be installed and must work from the prompt and the same with mpirun (Although this may be installed with mpi4py). NOTE: starting package was built for Linux. Autodoc
+k for MAC will have to be obtained from the Autodock4 website.  MGLTools will now work on MAC and the program does not require it for MAC. 
+
+Quick start instructions
+1. Launch with command: python Autodock_deeplearning_toxicology_GUI_Beta.py
+2. Under “file” in menu bar choose “1. Add Docking Project” and enter a project name
+3. In the table enter the name of a molecule under the “compound” column and the same name in the “name” column
+a. The compound column will accept names, SMILES or Inchi code. Each column should have a corresponding name but this can be any string without special characters and spaces. However, underscore can be used to replace a space. 
+b. Optionally a two column list with comma as a delimiter can be pasted into the first two columns. The first column can contain a mixture of name, SMILES and inchi codes and the second column should contain identifiers without special characters nor spaces. 
+4. Next, choose “input molecules from table” under file menu.
+a. The program will now search for compounds through the PubChem database.
+b. When searching is done with will display “Job done” in the lower left
+5. Now choose “2. Setup Docking Project” in the file menu and wait for it complete.  
+a. When complete a file called “list-to-dock.txt” will show up in the list view.
+6. Next choose “3. Run docking” in the file menu and enter a number of processors to use in the pop dialogue. 
+7. When docking has completed the program will display “Job Done” above the progress bar.  This can take several hours. 
+8. Then process docking results by choosing “4. Process Docking”.  NOTE: this will run through 9 steps in total. 
+a. Important: Step 4 may look like it has completed but has not.  The program will not freeze and should not be exited… it will continue. 
+9. Once all of step 8 above has completed the program will again display “Job Done” above the progress bar.  Then click on the second tab “Docking results and machine learning predictions”.
+a. Then click on “Populate list”
+10. In this left upper window a list of molecule names will appear, below that will be receptor names.  If you click on a molecule name and then receptor both names should appear in the list above the buttons.  This is how diagrams of interaction are selected.  Once you have all 
+of the receptor and molecule pairs you want to see click load list. If too many selections pop up highlight them and then use the “remove from list” button to remove them.  You can hold down “Ctrl” to select more than one. 
+11. Finally, with interaction diagrams loaded a PDF report can be generated (requires LaTex) with the “Print report of displayed molecules” button.
+a. Note: it will not actually print.  It will just save a PDF.
+
+Alternate Input
+It is possible to generate 3D structures of molecules with openbabel or RDKit from SMILES or inchi codes.  Start a project as described above but skip step 3 and instead place a text file in the “molecules_files” directory containing one column with no delimiter with either SMILE
+S or inchi codes (or a mixture of them).  Then choose “Generate 3D molecules” form the files menu and follow the prompts.  The table should update with information and 2D images of the molecules. Then continue with step 5 above.
+
+Another possibility is to use your own SDF file of 3D molecules.  To do this start a project as described above and skip step 3 and instead choose “input molecules by 3D SDF file” from the file menu.  The table should update with information and 2D images of the molecules. Then c
+ontinue with step 5 above. 
+Troubleshooting
+The GUI will check for the version of openMPI and work with version 3 or 4 however if multiple instances of one docking run are launch this usually indicates two installs of openMPI.  Both Conda and PIP will install openMPI with MPI4PY.  If you have recently installed MPI4PY this
+ way and are facing this problem, we have had success with uninstalling MPI4PY and then running pip to reinstall while using the --no-deps command line argument.  This will install MPI4PY only, without installing openMPI.
