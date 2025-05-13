@@ -95,8 +95,8 @@
 ### Non-Python Installs
 - **Python**: v3.8
 - **Conda**: v4.9.2
-- **AutoDock**: 4.2.6
-- **MGLTools**: 1.5.6 (Linux and Windows only)
+- **AutoDock**: 4.2.6 **NOTE**: this must be downloaded separately
+- **MGLTools**: 1.5.6 (Linux and Windows only) **NOTE**: this must be downloaded separately
 - **MPI**: v3 or v4 (OpenMPI, Intel OpenMPI, or Microsoft SDK version)
 - **LaTeX**: Tested with LaTeX Live
 
