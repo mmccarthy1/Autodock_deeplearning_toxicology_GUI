@@ -1,7 +1,3 @@
-Certainly! Here's a well-formatted version of the content from your `README.md` file:
-
----
-
 # Autodock Deep Learning Toxicology GUI
 
 ## Installation and Setup
@@ -131,7 +127,7 @@ Certainly! Here's a well-formatted version of the content from your `README.md` 
    ```
 3. Run the program:
    ```bash
-   python Autodock_deeplearning_toxicology_GUI_Beta.py
+   python Autodock_deeplearning_toxicology_GUI.py
    ```
    - Ensure to use `--file` and not `-f` during installation to avoid issues with pip packages.
 
