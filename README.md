@@ -99,14 +99,17 @@
 - **MGLTools**: 1.5.6 (Linux and Windows only) **NOTE**: this must be downloaded separately
 - **MPI**: v3 or v4 (OpenMPI, Intel OpenMPI, or Microsoft SDK version)
 - **LaTeX**: Tested with LaTeX Live
+- **CUDA**: v9.0
+- **NVIDIA-Driver**: 570.124.04
 
 ### Python Packages
 - **binana.py** (from Durrant lab and University of Pittsburgh)
-- **TensorFlow**: v2.4
+- **TensorFlow**: v2.5.0
 - **Pandas**: v1.2.3
 - **NumPy**: v1.19
 - **Keras**: v2.4.3
 - **mpi4py**: v3.0.3
+- **scypy**: v1.10.1
 - **OpenBabel**: v3.1.1 (verified version)
 - **Plotly**: v4.9.3 (newer versions also tested)
 - **Kaleido**
