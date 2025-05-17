@@ -1,0 +1,23 @@
+name: deepdocktox_pyqt6
+channels:
+  - conda-forge
+  - nvidia
+dependencies:
+  - python=3.9
+  - numpy=1.20.1
+  - openbabel=3.1.1
+  - plotly=4.9.0
+  - python-kaleido=0.2.1
+  - rdkit=2020.09.3
+  - gcc=12.1.0
+  - pandas=1.2.4
+  - pip=21.1.1
+  - mpi4py==3.1.4
+  - pip:
+      - pyqtwebengine==6.9.0
+      - pyqt==6.9.0
+      - tensorflow==2.5.0
+      - keras==2.4.3
+      - scipy==1.10.1
+      - pubchempy==1.0.4
+      - pylatex==1.4.1
